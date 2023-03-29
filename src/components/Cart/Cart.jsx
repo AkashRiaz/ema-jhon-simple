@@ -17,10 +17,11 @@ const Cart = ({ cart }) => {
       <p>Product Item:{cart.length}</p>
       <p>Total Price:${total}</p>
       <p>Total Shipping:${totalShipping}</p>
-      <p>Tax:${tax}</p>
-      <h6>Grand Total:${grandTotal}</h6>
+      <p>Tax:${tax.toFixed(2)}</p>
+      <h6>Grand Total:${grandTotal.toFixed(2)}</h6>
     </div>
   );
 };
+
 
 export default Cart;
